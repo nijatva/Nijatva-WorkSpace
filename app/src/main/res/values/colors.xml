@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorAccent">#111114</color>
+    <color name="colorAccentSetupWizard">#FFC107</color>
+    <color name="colorNavigationBar">#FFFFFF</color>
+    <color name="colorNavigationIconTint">#8E8E93</color>
+    <color name="colorNavigationIconTintSelected">#111114</color>
+    <color name="colorTextPrimary">#111114</color>
+    <color name="colorTextSecondary">#6B6B70</color>
+    <color name="disabledAppBackground">#F2F2F4</color>
+    <color name="selectedAppBackground">#EDEDF0</color>
+    <color name="selectedAndDisabledAppBackground">#E2E2E6</color>
+</resources>

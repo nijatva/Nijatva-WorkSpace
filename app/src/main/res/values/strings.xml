@@ -1,0 +1,269 @@
+<resources>
+    <string name="app_name" translatable="false">Nijatva Work Space</string>
+    <string name="first_run_alert_cancel">Not now</string>
+    <string name="first_run_alert_continue">Continue</string>
+    <string name="device_admin_label" translatable="false">Nijatva</string>
+    <string name="device_admin_desc">App Isolation Service</string>
+    <string name="device_admin_explanation">Nijatva needs to become Device Admin in order to perform its isolation tasks.</string>
+    <string name="payment_stub_description">Payment Service Stub (DO NOT USE)</string>
+
+    <!-- Setup Wizard -->
+    <string name="setup_wizard_welcome">Welcome to Nijatva</string>
+    <string name="setup_wizard_welcome_text">Nijatva is an application to help you run other applications in an isolated profile. It does so by making use of the <b>Work Profile</b> feature of Android.\n\nClick \"Next\", and we will provide you with more information about Nijatva, and guide you through the setup process.\n\nWe suggest that you read through all of the following pages carefully.</string>
+    <string name="setup_wizard_permissions">A word on permissions</string>
+    <string name="setup_wizard_permissions_text">By default, Nijatva will not ask for any individual permissions. However, once you proceed with the setup process, Nijatva will try to set up a Work Profile and hence become the <b>profile manager</b> of said profile.\n\nThis will grant Nijatva an extensive list of permissions inside the profile, comparable to that of a Device Admin, albeit confined to the profile. Being the profile manager is necessary for most of Nijatva\'s functionality.\n\nSome advanced features of Nijatva may require more permissions <b>outside</b> the Work Profile. When needed, Nijatva will ask for those permissions separately when you enable the corresponding features.</string>
+    <string name="setup_wizard_compatibility">Compatibility</string>
+    <string name="setup_wizard_compatibility_text">Nijatva is developed and tested on AOSP-like Android derivatives. This includes AOSP (Android Open Source Project), Google Android (on Pixels), and <b>most AOSP-based open-source custom ROMs</b> such as LineageOS. If your phone is running one of the Android derivatives listed above, then congratulations! Nijatva is probably going to work correctly on your device.\n\nSome device vendors introduce very invasive customizations into the Android code base, resulting in conflicts, incompatibility and unexpected behavior. Some custom ROMs can also introduce compatibility-breaking changes, but generally these are rarer occurrences compared to phone vendor-introduced incompatibilities.\n\nShelter is merely an interface into the Work Profile feature provided by the system. If the feature provided by the system is broken or non-standard, <b>Nijatva could not magically resolve the issue on its own</b>. If you are currently using a vendor-modified Android version that is known to break Work Profiles, <b>you have been warned</b>. You may proceed anyway, but there is no guarantee that Nijatva would behave correctly under these circumstances.</string>
+    <string name="setup_wizard_ready">Ready?</string>
+    <string name="setup_wizard_ready_text">We are now ready to set up Nijatva for you. If your device is running Android 7 or lower, please first ensure that your device is <b>not</b> in Do Not Disturb mode, because you will need to <b>click on a notification</b> later to finalize the setup process.\n\nWhen you are ready, click on \"Next\" to begin the setup process.</string>
+    <string name="setup_wizard_please_wait">Please wait…</string>
+    <string name="setup_wizard_please_wait_text">We are trying to initialize Work Profile and set up Nijatva on your device.</string>
+    <string name="setup_wizard_failed">Setup failed</string>
+    <string name="setup_wizard_failed_text">We regret to inform you that we were not able to set up Nijatva for you.\n\nIf your device already had a Work Profile, either from a previous installation of Nijatva or from another application, you will have to remove that profile in Settings -> Account before Nijatva can proceed.\n\nOtherwise, if you did not cancel the setup manually, then the reason for the failure is most commonly due to a heavily modified system, or a conflict between Nijatva and other Work Profile managers. Unfortunately, there is not much that we could do about this.\n\nClick \"Next\" to exit.</string>
+    <string name="setup_wizard_action_required">Action required</string>
+    <string name="setup_wizard_action_required_text">You should now be seeing a notification from Nijatva. <b>Please click on that notification</b> to finish the setup process.\n\nIf you do not see the notification, make sure your device is not in Do Not Disturb mode and try pulling down the notification center.\n\nTo reset Nijatva and start over, you can clear the data of Nijatva in Settings.</string>
+
+    <!-- Notifications -->
+    <string name="notifications_important">Nijatva Important</string>
+    <string name="finish_provision_title">Click here to finish setting up Nijatva</string>
+    <string name="finish_provision_desc">Congratulations! You are one click away from finishing setting up Nijatva.</string>
+    <string name="service_title">Nijatva Service</string>
+    <string name="service_desc">Nijatva is now running &#8230;</string>
+    <string name="service_auto_freeze_title">Auto-freeze pending</string>
+    <string name="service_auto_freeze_desc">Nijatva will auto-freeze apps launched from \"Unfreeze &amp; Launch\" on the next screen lock event.</string>
+    <string name="service_auto_freeze_now">Freeze Now</string>
+    <string name="app_installing">Installing...</string>
+
+    <!-- Main UI -->
+    <string name="fragment_profile_main">Main</string>
+    <string name="fragment_profile_work">Nijatva</string>
+    <string name="list_item_disabled">[Frozen] %s</string>
+    <string name="batch_operation">Batch operation</string>
+    <string name="n_selected">%1$d selected</string>
+    <string name="status_frozen">Frozen</string>
+    <string name="status_active">Active</string>
+    <string name="status_strip">%1$d apps · %2$d frozen</string>
+
+    <!-- App Context Menu -->
+    <string name="clone_to_work_profile">Clone to Nijatva (Work Profile)</string>
+    <string name="clone_to_main_profile">Clone to Main Profile</string>
+    <string name="uninstall_app">Uninstall</string>
+    <string name="freeze_app">Freeze</string>
+    <string name="unfreeze_app">Unfreeze</string>
+    <string name="launch">Launch</string>
+    <string name="create_unfreeze_shortcut">Create Unfreeze and/or Launch Shortcut</string>
+    <string name="unfreeze_and_launch">Unfreeze and Launch</string>
+    <string name="auto_freeze">Auto Freeze</string>
+    <string name="allow_cross_profile_widgets">Allow Widgets in Main Profile</string>
+    <string name="allow_cross_profile_interaction">Allow Cross-Profile Interaction</string>
+
+    <!-- Action Bar Options Menu -->
+    <string name="search">Search</string>
+    <string name="freeze_all">Batch Freeze</string>
+    <string name="create_freeze_all_shortcut">Create Batch Freeze Shortcut</string>
+    <string name="freeze_all_shortcut">Freeze</string>
+    <string name="install_app_to_profile">Install APK into Nijatva</string>
+    <string name="install_app_to_profile_success">Application installation finished in work profile.</string>
+    <string name="show_all">Show All Apps</string>
+    <string name="show_all_warning">Manipulating apps that are hidden from the list could cause crashes and all sorts of unexpected behavior. However, this can be useful on vendor-customized ROMs that do not enable all the necessary system apps in the work profile by default. Continue at your own risk.</string>
+    <string name="documents_ui">Open Files</string>
+
+    <!-- Settings Options -->
+    <string name="settings">Settings</string>
+    <string name="settings_interaction">Interaction</string>
+    <string name="settings_cross_profile_file_chooser">File Shuttle</string>
+    <string name="settings_cross_profile_file_chooser_desc">Move files between your personal space and Nijatva through the system Files app (Documents UI). Other apps only get temporary access to files you pick. Your files stay isolated.</string>
+    <string name="settings_block_contacts_searching">Block Contacts Searching</string>
+    <string name="settings_block_contacts_searching_desc">Hide work-profile contacts from apps in your personal space.</string>
+    <string name="settings_payment_stub">Payment Service Stub</string>
+    <string name="settings_payment_stub_desc">Enable a fake NFC payment service in the main profile, so that the "contactless payments" option under Settings - NFC becomes enabled to allow you to choose a payment app inside the work profile. This works around an Android bug that makes it impossible to select a payment app inside the work profile if none is available in the main profile.</string>
+    <string name="settings_services">Services</string>
+    <string name="settings_auto_freeze_service">Auto-Freeze</string>
+    <string name="settings_auto_freeze_service_desc">Freeze your work apps automatically when you lock the screen.</string>
+    <string name="settings_auto_freeze_delay">Auto Freeze Delay</string>
+    <string name="settings_dont_freeze_foreground">Skip Foreground Apps</string>
+    <string name="settings_dont_freeze_foreground_desc">Don\'t freeze apps that are currently open (like a music player). You can freeze them later with the Batch Freeze shortcut.</string>
+    <string name="settings_transfer">Transfer</string>
+    <string name="transfer_autowipe">Shuttle auto-wipe</string>
+    <string name="transfer_autowipe_desc">Delete files left in the Nijatva/Shuttle folder after this long</string>
+    <string name="transfer_off">Off</string>
+    <string name="transfer_15m">15 minutes</string>
+    <string name="transfer_1h">1 hour</string>
+    <string name="transfer_24h">24 hours</string>
+    <string name="transfer_clean_now">Clean shuttle folder now</string>
+    <string name="transfer_summary">%1$d file(s) · %2$s</string>
+    <string name="transfer_empty">Shuttle folder is empty</string>
+    <string name="transfer_cleaned">%1$d file(s) removed</string>
+    <string name="settings_inspect">Inspect</string>
+    <string name="inspect_policies">Policy verification</string>
+    <string name="inspect_policies_desc">Read every protection back from Android and report mismatches</string>
+    <string name="inspect_components">Security details</string>
+    <string name="inspect_exported">Exported components</string>
+    <string name="inspect_integrity">Profile integrity</string>
+    <string name="inspect_integrity_desc">Verify that Nijatva really manages this work profile</string>
+    <string name="inspect_inventory">App inventory</string>
+    <string name="inspect_inventory_desc">Versions, signing fingerprints and permissions of work apps</string>
+    <string name="inspect_snapshot">Permission changes</string>
+    <string name="inspect_snapshot_desc">Save a baseline, then see exactly what changed</string>
+    <string name="inspect_copy">Copy report</string>
+    <string name="inspect_copied">Report copied</string>
+    <string name="inspect_baseline_saved">Baseline saved (%1$d permission entries)</string>
+    <string name="inspect_no_changes">No permission changes since the baseline</string>
+    <string name="inspect_changes">%1$d permission change(s)</string>
+    <string name="inspect_unavailable">Work profile not connected</string>
+    <string name="inspect_save_baseline">Save baseline now</string>
+    <string name="settings_protect">Protect</string>
+    <string name="protect_screen_capture">Block screenshots</string>
+    <string name="protect_screen_capture_desc">Stops screenshots and screen recording of work apps</string>
+    <string name="protect_notif_privacy">Hide notification content on lock screen</string>
+    <string name="protect_notif_privacy_desc">Work notifications show as \"New notification\" while the phone is locked</string>
+    <string name="protect_backup">Block backup of work data</string>
+    <string name="protect_backup_desc">Keeps work profile data out of Android backup (Android 8 and newer)</string>
+    <string name="protect_bluetooth">Block Bluetooth contact sharing</string>
+    <string name="protect_bluetooth_desc">Stops Bluetooth devices reading work-profile contacts</string>
+    <string name="protect_notif_listeners">Block personal notification listeners</string>
+    <string name="protect_notif_listeners_desc">Personal apps cannot read work-profile notifications</string>
+    <string name="protect_caller_id">Isolate work caller-ID</string>
+    <string name="protect_caller_id_desc">Personal dialer will not show work contact names for calls</string>
+    <string name="protect_ca_title">Trusted certificates</string>
+    <string name="protect_ca_desc">User-installed certificate authorities in the work profile</string>
+    <string name="protect_ca_none">No user-installed certificates</string>
+    <string name="protect_ca_count">%1$d user-installed certificate(s)</string>
+    <string name="protect_status_title">Work profile status</string>
+    <string name="protect_status_active">Active</string>
+    <string name="protect_status_paused">Paused</string>
+    <string name="protect_status_unavailable">Unavailable</string>
+    <string name="protect_failed">Android refused this policy</string>
+    <string name="settings_about">About</string>
+    <string name="settings_based_on">GPLv3 fork of Shelter · 45+ features added</string>
+    <string name="settings_based_on_desc" translatable="false">PeterCxy · GPLv3 · github.com/PeterCxy/Shelter</string>
+    <string name="file_shuttle_root_summary">Browse the other profile\'s files through Nijatva</string>
+    <string name="settings_per_app_cross_profile">Per-app cross-profile access</string>
+    <string name="settings_per_app_cross_profile_desc">Choose exactly which work apps can interact with your personal space</string>
+    <string name="settings_per_app_cross_profile_done">%1$d apps selected</string>
+    <string name="file_shuttle_req_title">File Shuttle requirements</string>
+    <string name="file_shuttle_req_ok">OK</string>
+    <string name="file_shuttle_req_missing">MISSING</string>
+    <string name="file_shuttle_req_all_files_personal">All files access — Personal</string>
+    <string name="file_shuttle_req_all_files_work">All files access — Work</string>
+    <string name="file_shuttle_req_overlay_personal">Display over other apps — Personal</string>
+    <string name="file_shuttle_req_overlay_work">Display over other apps — Work</string>
+    <string name="file_shuttle_req_tail">Turn ON every MISSING item for BOTH the Personal and the Work copy of Nijatva, then flip this switch again.</string>
+    <string name="file_shuttle_req_all_files_btn">All files access</string>
+    <string name="file_shuttle_req_overlay_btn">Display over other apps</string>
+    <string name="settings_support">Support the developer</string>
+    <string name="settings_support_desc">UPI: Vasudevupi@upi — tap to show QR code</string>
+    <string name="support_title">Support the developer</string>
+    <string name="support_upi_label">UPI ID</string>
+    <string name="support_copy">Copy UPI ID</string>
+    <string name="support_copied">UPI ID copied</string>
+    <string name="support_note">This is optional. The app is free and works fully offline.</string>
+    <string name="support_qr_failed">Could not create QR code</string>
+    <string name="settings_allow_all_cross_profile_done">%1$d apps allowed cross-profile</string>
+    <string name="settings_feedback">Send feedback</string>
+    <string name="settings_feedback_desc" translatable="false">Report bugs or share ideas — Vasudev.work@rediffmail.com</string>
+    <string name="settings_developer">Developer</string>
+    <string name="settings_developer_name" translatable="false">Vasudev Dangaya</string>
+    <string name="settings_made_in_india" translatable="false">Made in India 🇮🇳</string>
+    <string name="sort_by">Sort by</string>
+    <string name="sort_name_az">Name (A to Z)</string>
+    <string name="sort_name_za">Name (Z to A)</string>
+    <string name="sort_frozen_first">Frozen apps first</string>
+    <string name="sort_unfrozen_first">Active apps first</string>
+    <string name="sort_recent">Recently installed</string>
+    <string name="chip_all">All</string>
+    <string name="chip_active">Active</string>
+    <string name="chip_frozen">Frozen</string>
+    <string name="chip_system">System</string>
+    <string name="chip_suite">Nijatva</string>
+    <string name="app_info">App info</string>
+    <string name="copy_package">Copy package name</string>
+    <string name="apk_preview_title">Install into work space?</string>
+    <string name="apk_preview_version">Version %1$s (%2$d)</string>
+    <string name="apk_preview_package">Package: %1$s</string>
+    <string name="apk_preview_size">Size: %1$s</string>
+    <string name="apk_preview_perms">Permissions: %1$d</string>
+    <string name="apk_preview_install">Install</string>
+    <string name="apk_preview_failed">Could not read this APK</string>
+    <string name="apk_preview_cancel">Cancel</string>
+    <string name="leash_title">Temporarily unfreeze</string>
+    <string name="leash_15">15 minutes</string>
+    <string name="leash_30">30 minutes</string>
+    <string name="leash_60">1 hour</string>
+    <string name="leash_done">Unfrozen for %1$s — it will freeze again automatically</string>
+    <string name="leash_failed">Could not unfreeze this app</string>
+    <string name="suspend_app">Suspend app</string>
+    <string name="unsuspend_app">Unsuspend app</string>
+    <string name="suspend_done">Suspended — visible but cannot run</string>
+    <string name="unsuspend_done">Unsuspended</string>
+    <string name="suspend_failed">Android refused to suspend this app</string>
+    <string name="tamper_guard_on">Protect from force-stop</string>
+    <string name="tamper_guard_off">Allow force-stop</string>
+    <string name="tamper_on_done">Force-stop and clear-data blocked</string>
+    <string name="tamper_off_done">Force-stop allowed again</string>
+    <string name="tamper_failed">Android refused this (needs Android 11+)</string>
+    <string name="freeze_all_except">Freeze all others</string>
+    <string name="freeze_all_except_done">%1$d app(s) frozen</string>
+    <string name="block_uninstall">Block uninstall</string>
+    <string name="allow_uninstall">Allow uninstall</string>
+    <string name="uninstall_blocked_done">Uninstall blocked</string>
+    <string name="uninstall_allowed_done">Uninstall allowed</string>
+    <string name="uninstall_guard_failed">Android refused to change this</string>
+    <string name="package_copied">Package name copied</string>
+    <string name="app_info_failed">Could not open app info</string>
+    <string name="settings_suite_apps">Nijatva suite apps</string>
+    <string name="settings_suite_apps_desc">See which Nijatva apps are installed here, and open them</string>
+    <string name="suite_installed">installed</string>
+    <string name="suite_not_installed">not installed</string>
+    <string name="suite_cannot_launch">This app cannot be launched</string>
+    <string name="status_strip_suite">%1$d apps · %2$d frozen · %3$d Nijatva</string>
+    <string name="settings_allow_suite">Allow all Nijatva apps</string>
+    <string name="settings_allow_suite_desc">Let every installed Nijatva app interact across profiles</string>
+    <string name="suite_allowed_done">%1$d Nijatva apps allowed</string>
+    <string name="suite_none_installed">No Nijatva apps found in the work space</string>
+    <string name="chip_label">%1$s %2$d</string>
+    <string name="shortcut_label">Shortcut</string>
+    <string name="settings_gms_status">Google Play Services</string>
+    <string name="gms_not_installed">Not installed — this device is GMS-free</string>
+    <string name="gms_installed">Installed</string>
+    <string name="settings_allow_all_cross_profile">Allow all apps cross-profile</string>
+    <string name="settings_allow_all_cross_profile_desc">Let every work app interact with your personal space — removes the \"Access blocked by your IT admin\" block</string>
+    <string name="settings_version">Version</string>
+    <string name="settings_source_code">Source Code</string>
+    <string name="settings_source_code_url" translatable="false">https://github.com/nijatva/Nijatva-WorkSpace</string>
+    <string name="settings_translate">Translate</string>
+    <string name="settings_translate_url" translatable="false">https://weblate.typeblog.net/projects/shelter/shelter/</string>
+    <string name="settings_bug_report">Bug Report / Issue Tracker</string>
+    <string name="settings_bug_report_url" translatable="false">https://lists.sr.ht/~petercxy/shelter</string>
+    <string name="settings_patreon" translatable="false">Patreon</string>
+    <string name="settings_patreon_url" translatable="false">https://www.patreon.com/PeterCxy</string>
+
+    <!-- Toast Long Texts -->
+    <string name="provision_finished">Nijatva setup complete. Now restarting Nijatva. If Nijatva didn\'t start automatically, you may launch it again from your launcher.</string>
+    <string name="msg_device_unsupported">Permission is denied or Unsupported device</string>
+    <string name="work_profile_not_found">Work profile not found. Please restart the app to re-provision the profile.</string>
+    <string name="work_profile_provision_failed">Cannot provision work profile. You may try again by restarting Nijatva.</string>
+    <string name="work_mode_disabled">It looks like you have disabled Work Mode while starting Nijatva. If you have enabled it now, please start Nijatva again.</string>
+    <string name="clone_success">Application \"%s\" cloned successfully</string>
+    <string name="uninstall_success">Application \"%s\" uninstalled successfully</string>
+    <string name="freeze_success">Application \"%s\" frozen successfully</string>
+    <string name="unfreeze_success">Application \"%s\" unfrozen successfully</string>
+    <string name="clone_fail_system_app">Cannot clone system apps to a profile that Nijatva has no control of.</string>
+    <string name="uninstall_fail_system_app">Cannot uninstall system apps in a profile that Nijatva has no control of.</string>
+    <string name="unsupported_launcher">Cannot add shortcuts to your launcher. Please contact the developer for more information.</string>
+    <string name="app_context_menu_title">Operations for %s</string>
+    <string name="freeze_all_success">All apps in \"Auto Freeze\" list have been frozen successfully.</string>
+    <string name="unfreeze_all_success">Selected apps unfrozen</string>
+    <string name="shortcut_create_success">Shortcut created on your launcher.</string>
+    <string name="request_usage_stats">Nijatva needs <b>Usage Stats</b> permission to do this. Please enable the permission for <b>both</b> Nijatva apps shown in the dialog after you press \"Ok\". Failing to do so will cause this feature to not work properly.</string>
+    <string name="launch_app_fail">Cannot launch app %s because it has no GUI.</string>
+    <string name="request_storage_manager">Nijatva needs access to <b>All Files</b> for File Shuttle. Please enable the permission for <b>both </b> (Personal / Work) Nijatva apps shown in the dialog after you press \"Ok\".</string>
+    <string name="request_system_alert">Nijatva needs to <b>Draw over Other Apps</b> in order for File Shuttle to function correctly. Please enable the permission for <b>both </b> (Personal / Work) Nijatva apps shown in the dialog after you press \"Ok\". This permission is used to start File Shuttle services in the background.</string>
+
+    <!-- MIUI -->
+    <string name="miui_cannot_clone">Cloning non-system apps to another profile is currently not possible on MIUI. Please clone your system\'s app store (e.g. <b>Play Store</b>) into the other profile and then install apps from there.</string>
+    <string name="continue_anyway">Continue anyway</string>
+
+    <!-- Formats -->
+    <string name="format_minutes">%d min</string>
+</resources>

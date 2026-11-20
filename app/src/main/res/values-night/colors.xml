@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Nijatva dark: true AMOLED black surfaces, muted greys, white accent states -->
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorAccent">#FFFFFF</color>
+    <color name="colorAccentSetupWizard">#FFC107</color>
+    <color name="colorNavigationBar">#000000</color>
+    <color name="colorNavigationIconTint">#8E8E93</color>
+    <color name="colorNavigationIconTintSelected">#FFFFFF</color>
+    <color name="colorTextPrimary">#F5F5F7</color>
+    <color name="colorTextSecondary">#9A9AA0</color>
+    <color name="disabledAppBackground">#121216</color>
+    <color name="selectedAppBackground">#1C1C22</color>
+    <color name="selectedAndDisabledAppBackground">#26262E</color>
+</resources>

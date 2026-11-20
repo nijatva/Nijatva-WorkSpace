@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="shuttle_autowipe_entries">
+        <item>@string/transfer_off</item>
+        <item>@string/transfer_15m</item>
+        <item>@string/transfer_1h</item>
+        <item>@string/transfer_24h</item>
+    </string-array>
+    <string-array name="shuttle_autowipe_values">
+        <item>0</item>
+        <item>900000</item>
+        <item>3600000</item>
+        <item>86400000</item>
+    </string-array>
+</resources>

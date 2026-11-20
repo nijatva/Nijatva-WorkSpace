@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.preference.PreferenceCategory
+        android:title="@string/settings_interaction">
+
+        <androidx.preference.SwitchPreferenceCompat
+            android:key="settings_cross_profile_file_chooser"
+            android:icon="@drawable/ic_pref_file_shuttle"
+            android:title="@string/settings_cross_profile_file_chooser"
+            android:summary="@string/settings_cross_profile_file_chooser_desc" />
+
+        <androidx.preference.SwitchPreferenceCompat
+            android:key="settings_allow_all_cross_profile"
+            android:icon="@drawable/ic_pref_cross"
+            android:title="@string/settings_allow_all_cross_profile"
+            android:summary="@string/settings_allow_all_cross_profile_desc" />
+
+        <androidx.preference.Preference
+            android:key="settings_suite_apps"
+            android:icon="@drawable/ic_pref_cross"
+            android:title="@string/settings_suite_apps"
+            android:summary="@string/settings_suite_apps_desc" />
+
+        <androidx.preference.Preference
+            android:key="settings_allow_suite"
+            android:icon="@drawable/ic_pref_cross"
+            android:title="@string/settings_allow_suite"
+            android:summary="@string/settings_allow_suite_desc" />
+
+        <androidx.preference.Preference
+            android:key="settings_per_app_cross_profile"
+            android:icon="@drawable/ic_pref_cross"
+            android:title="@string/settings_per_app_cross_profile"
+            android:summary="@string/settings_per_app_cross_profile_desc" />
+
+        <androidx.preference.SwitchPreferenceCompat
+            android:key="settings_block_contacts_searching"
+            android:icon="@drawable/ic_pref_block"
+            android:title="@string/settings_block_contacts_searching"
+            android:summary="@string/settings_block_contacts_searching_desc" />
+
+    </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory
+        android:title="@string/settings_services">
+
+        <androidx.preference.SwitchPreferenceCompat
+            android:key="settings_auto_freeze_service"
+            android:icon="@drawable/ic_pref_auto_freeze"
+            android:title="@string/settings_auto_freeze_service"
+            android:summary="@string/settings_auto_freeze_service_desc" />
+
+        <androidx.preference.DropDownPreference
+            android:dependency="settings_auto_freeze_service"
+            android:key="settings_auto_freeze_delay"
+            android:icon="@drawable/ic_pref_delay"
+            android:title="@string/settings_auto_freeze_delay" />
+
+        <androidx.preference.SwitchPreferenceCompat
+            android:dependency="settings_auto_freeze_service"
+            android:key="settings_dont_freeze_foreground"
+            android:icon="@drawable/ic_pref_foreground"
+            android:title="@string/settings_dont_freeze_foreground"
+            android:summary="@string/settings_dont_freeze_foreground_desc" />
+
+    </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory
+        android:title="@string/settings_transfer">
+
+        <androidx.preference.DropDownPreference
+            android:key="settings_transfer_autowipe"
+            android:icon="@drawable/ic_pref_delay"
+            android:title="@string/transfer_autowipe"
+            android:summary="@string/transfer_autowipe_desc"
+            android:entries="@array/shuttle_autowipe_entries"
+            android:entryValues="@array/shuttle_autowipe_values"
+            android:defaultValue="0" />
+
+        <androidx.preference.Preference
+            android:key="settings_transfer_clean"
+            android:icon="@drawable/ic_pref_source"
+            android:title="@string/transfer_clean_now" />
+
+    </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory
+        android:title="@string/settings_inspect">
+
+        <androidx.preference.Preference
+            android:key="settings_inspect_integrity"
+            android:icon="@drawable/ic_pref_version"
+            android:title="@string/inspect_integrity"
+            android:summary="@string/inspect_integrity_desc" />
+
+        <androidx.preference.Preference
+            android:key="settings_inspect_policies"
+            android:icon="@drawable/ic_pref_block"
+            android:title="@string/inspect_policies"
+            android:summary="@string/inspect_policies_desc" />
+
+        <androidx.preference.Preference
+            android:key="settings_inspect_inventory"
+            android:icon="@drawable/ic_pref_source"
+            android:title="@string/inspect_inventory"
+            android:summary="@string/inspect_inventory_desc" />
+
+        <androidx.preference.Preference
+            android:key="settings_inspect_snapshot"
+            android:icon="@drawable/ic_pref_delay"
+            android:title="@string/inspect_snapshot"
+            android:summary="@string/inspect_snapshot_desc" />
+
+    </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory
+        android:title="@string/settings_protect">
+
+        <androidx.preference.SwitchPreferenceCompat
+            android:key="settings_protect_screen_capture"
+            android:icon="@drawable/ic_pref_block"
+            android:title="@string/protect_screen_capture"
+            android:summary="@string/protect_screen_capture_desc" />
+
+        <androidx.preference.SwitchPreferenceCompat
+            android:key="settings_protect_notif_privacy"
+            android:icon="@drawable/ic_pref_foreground"
+            android:title="@string/protect_notif_privacy"
+            android:summary="@string/protect_notif_privacy_desc" />
+
+        <androidx.preference.SwitchPreferenceCompat
+            android:key="settings_protect_backup"
+            android:icon="@drawable/ic_pref_delay"
+            android:title="@string/protect_backup"
+            android:summary="@string/protect_backup_desc" />
+
+        <androidx.preference.SwitchPreferenceCompat
+            android:key="settings_protect_bluetooth"
+            android:icon="@drawable/ic_pref_cross"
+            android:title="@string/protect_bluetooth"
+            android:summary="@string/protect_bluetooth_desc" />
+
+        <androidx.preference.SwitchPreferenceCompat
+            android:key="settings_protect_notif_listeners"
+            android:icon="@drawable/ic_pref_foreground"
+            android:title="@string/protect_notif_listeners"
+            android:summary="@string/protect_notif_listeners_desc" />
+
+        <androidx.preference.SwitchPreferenceCompat
+            android:key="settings_protect_caller_id"
+            android:icon="@drawable/ic_pref_cross"
+            android:title="@string/protect_caller_id"
+            android:summary="@string/protect_caller_id_desc" />
+
+        <androidx.preference.Preference
+            android:key="settings_protect_ca"
+            android:icon="@drawable/ic_pref_source"
+            android:title="@string/protect_ca_title"
+            android:summary="@string/protect_ca_desc" />
+
+        <androidx.preference.Preference
+            android:key="settings_protect_status"
+            android:icon="@drawable/ic_pref_version"
+            android:title="@string/protect_status_title" />
+
+    </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory
+        android:title="@string/settings_about">
+
+        <androidx.preference.Preference
+            android:key="settings_gms_status"
+            android:icon="@drawable/ic_pref_version"
+            android:title="@string/settings_gms_status" />
+
+        <androidx.preference.Preference
+            android:key="settings_version"
+            android:icon="@drawable/ic_pref_version"
+            android:title="@string/settings_version" />
+
+        <androidx.preference.Preference
+            android:key="settings_support"
+            android:icon="@drawable/ic_pref_support"
+            android:title="@string/settings_support"
+            android:summary="@string/settings_support_desc" />
+
+        <androidx.preference.Preference
+            android:key="settings_feedback"
+            android:icon="@drawable/ic_pref_feedback"
+            android:title="@string/settings_feedback"
+            android:summary="@string/settings_feedback_desc" />
+
+        <androidx.preference.Preference
+            android:key="settings_developer"
+            android:icon="@drawable/ic_pref_developer"
+            android:title="@string/settings_developer"
+            android:summary="@string/settings_developer_name" />
+
+        <androidx.preference.Preference
+            android:key="settings_made_in_india"
+            android:icon="@drawable/ic_pref_india"
+            android:title="@string/settings_made_in_india" />
+
+        <androidx.preference.Preference
+            android:key="settings_based_on"
+            android:icon="@drawable/ic_pref_source"
+            android:title="@string/settings_based_on"
+            android:summary="@string/settings_based_on_desc" />
+
+        <androidx.preference.Preference
+            android:key="settings_source_code"
+            android:icon="@drawable/ic_pref_source"
+            android:title="@string/settings_source_code"
+            android:summary="@string/settings_source_code_url" />
+
+    </androidx.preference.PreferenceCategory>
+
+</androidx.preference.PreferenceScreen>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="navBarColor" format="color" />
+    <attr name="navIconTint" format="color" />
+    <attr name="navIconTintSelected" format="color" />
+    <attr name="appTextPrimary" format="color" />
+    <attr name="appTextSecondary" format="color" />
+    <attr name="appSelectedBg" format="color" />
+    <attr name="appSelectedDisabledBg" format="color" />
+    <attr name="appDisabledBg" format="color" />
+</resources>
