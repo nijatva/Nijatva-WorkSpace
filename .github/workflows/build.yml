@@ -11,9 +11,12 @@ jobs:
         with:
           distribution: temurin
           java-version: '17'
-      - uses: android-actions/setup-android@v3
-      - run: ./gradlew check --stacktrace
-      - run: ./gradlew assembleDebug --stacktrace
+      - name: Make gradlew executable
+        run: chmod +x gradlew
+      - name: Unit tests and no-GMS guard
+        run: ./gradlew check --stacktrace
+      - name: Build debug APK
+        run: ./gradlew assembleDebug --stacktrace
       - uses: actions/upload-artifact@v4
         with:
           name: debug-apk
